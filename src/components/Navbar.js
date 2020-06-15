@@ -3,11 +3,14 @@ import {Link} from 'react-router-dom';
 import logo from '../logo.svg';
 import styled from 'styled-components'
 
+import { ButtonContainer } from './Button.js'
+
 
 export default class Navbar extends Component {
     render() {
         return (
-            <nav className="navbar navbar-expands-sm bg-primary navbar-dark px-sm-5">
+            <NavWrapper className="navbar navbar-expands-sm navbar-dark px-sm-5">
+            
                 {
                 /* 
                     https://www.iconfinder.com/icons/1243689/call_phone_icon
@@ -32,11 +35,16 @@ export default class Navbar extends Component {
                         </span>
                     </ButtonContainer>
                 </Link>
-            </nav>
+            </NavWrapper>
         )
     }
 }
 
-const ButtonContainer = styled.button`
-text.transform: capatilize;
+const NavWrapper = styled.nav`
+    background: var(--mainBlue);  
+    .nav-link{
+        color:var(--mainWhite) !important;
+        font-size: 1.3rem;
+        text-transform: capitalize
+    }  
 `;

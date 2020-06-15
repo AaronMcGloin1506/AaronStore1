@@ -5,8 +5,8 @@
   --mainDark:#232528;
   --mainYellow:#ffa400;
 }
-body{
-  font-family: "Oswald", sans-serif !important;
+body {
+  font-family: 'Oswald', sans-serif !important;
   background: var(--mainWhite) !important;
   color: var(--mainDark) !important;
 }
@@ -16,7 +16,7 @@ body{
   text-transform: uppercase;
 }
 .text-blue{
-  color: var(--lightBlue);
+  color: var(--mainBlue);
 }
 .text-bright{
   color: var(--lightBlue);
